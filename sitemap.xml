@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:61027/blog/about/</loc>
+    <loc>https://www.linjimi.com/blog/about/</loc>
     <lastmod>2024-08-11T16:07:11+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:61027/blog/</loc>
+    <loc>https://www.linjimi.com/blog/</loc>
     <lastmod>2024-08-11T16:07:11+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:61027/blog/windowsstore/</loc>
+    <loc>https://www.linjimi.com/blog/windowsstore/</loc>
     <lastmod>2024-08-11T16:07:11+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:61027/</loc>
+    <loc>https://www.linjimi.com/</loc>
     <lastmod>2024-05-03T13:32:33-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:61027/categories/</loc>
+    <loc>https://www.linjimi.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:61027/tags/</loc>
+    <loc>https://www.linjimi.com/tags/</loc>
   </url>
 </urlset>
