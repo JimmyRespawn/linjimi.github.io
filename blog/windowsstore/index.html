@@ -22,62 +22,57 @@
     </nav>
 </header>
 
-    <section class="hero">
-        <h1>Blogs</h1>
-        <form id="search"
-    action='' method="get" class="form-inline">
-    <label hidden for="search-input">Search site</label>
-    <input type="text" id="search-input" name="query"
-    placeholder="Type here to search">
-    <button type="submit" value="search">Search</button>
-</form>
 
-    </section>
-    <main>
-        <p></p>
-        <ul>
-            
-            <div class="blog-cards">
+
+<section class="hero"
+    style='background-image: url("/images/WindowsStore.webp"); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%;'
+    id="heroSection" onload="adjustTextColor(this)">
+    <div>
+        <h1 id="textOverlay">Windows App</h1>
+    </div>
+</section>
+<main class="post">
     
-        <div class="card">
-            <a href="https://www.linjimi.com/blog/about/">
-                
-                    
-
-
-
-
-
-<img src="/images/7.jpg" alt="About">
-
-                
-                <div class="text">
-                    <h2>About</h2>
-                    <p class="small">Product Manager and indie app developer. Design stuff and play games.
-</p>
-                </a>
-            </div>
-        </div>
+</main>
+<script>
+    function adjustTextColor(sectionId) {
+        const section = document.getElementById(sectionId);
+        const style = window.getComputedStyle(section);
+        const imageUrl = style.backgroundImage.slice(4, -1).replace(/["']/g, "");
+        const image = new Image();
+        image.src = imageUrl;
+        image.onload = function () {
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            canvas.width = image.width;
+            canvas.height = image.height;
+            context.drawImage(image, 0, 0, image.width, image.height);
+            const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+            const data = imageData.data;
+            let r = 0, g = 0, b = 0;
+            for (let i = 0; i < data.length; i += 4) {
+                r += data[i];
+                g += data[i + 1];
+                b += data[i + 2];
+            }
+            r /= (data.length / 4);
+            g /= (data.length / 4);
+            b /= (data.length / 4);
+            const brightness = Math.sqrt(0.299 * r * r + 0.587 * g * g + 0.114 * b * b);
+            const textColor = brightness > 128 ? 'black' : 'white';
+            const shadowColor = brightness > 128 ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)';
+            const textOverlay = document.getElementById('textOverlay');
+            textOverlay.style.color = textColor;
+            textOverlay.style.textShadow = `0 0 5px ${shadowColor}, 0 0 10px ${shadowColor}, 0 0 20px ${shadowColor}, 0 0 40px ${shadowColor}, 0 0 80px ${shadowColor}, 0 0 90px ${shadowColor}, 0 0 100px ${shadowColor}, 0 0 150px ${shadowColor}`;
+        };
+    }
     
-        <div class="card">
-            <a href="https://www.linjimi.com/blog/windowsstore/">
-                
-                    <img src="/images/WindowsStore.webp" alt="Blogs">
-                
-                <div class="text">
-                    <h2>Windows App</h2>
-                    <p class="small">Acquire exclusive app designed for Windows and Xbox made by me.
-</p>
-                </a>
-            </div>
-        </div>
-    
-</div>
+    adjustTextColor('heroSection');
+</script>
 
-            
-            
-        </main>
-    <footer>
+<meta http-equiv="refresh" content="0;url=https://app.linjimi.com/" />
+
+<footer>
     <div class="social-media">
         
     </div>
