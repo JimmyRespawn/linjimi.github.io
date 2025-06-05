@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Lin Jimi</title>
+    <link>https://www.linjimi.com/zh/blog/</link>
+    <description>Recent content in Blogs on Lin Jimi</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 11 Aug 2024 16:07:11 +0800</lastBuildDate>
+    <atom:link href="https://www.linjimi.com/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 应用</title>
+      <link>https://www.linjimi.com/zh/blog/windowsstore/</link>
+      <pubDate>Sun, 11 Aug 2024 16:07:11 +0800</pubDate>
+      <guid>https://www.linjimi.com/zh/blog/windowsstore/</guid>
+      <description>下载由我开发的独特 Windows 和 Xbox 应用</description>
+    </item>
+    <item>
+      <title>关于我</title>
+      <link>https://www.linjimi.com/zh/blog/about/</link>
+      <pubDate>Sun, 11 Aug 2024 16:07:11 +0800</pubDate>
+      <guid>https://www.linjimi.com/zh/blog/about/</guid>
+      <description>产品经理 和 独立开发者 并存</description>
+    </item>
+  </channel>
+</rss>
